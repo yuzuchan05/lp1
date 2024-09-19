@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 $sp:767px;
-$md:1023px;
+$md:1200px;
 $pc:768px;
 
 @mixin sp {
@@ -27,7 +27,7 @@ html {
         font-size: calc(10 / 375 * 100vw);
     }
 }
-@media screen and (max-width:1023px) and (min-width:768px) {
+@media screen and (max-width:1200px) and (min-width:768px) {
     html {
         font-size: 1vw;
     }
@@ -78,14 +78,6 @@ li {
     padding: 0;
   }
 }
-.animate__animated {
-  opacity: 0;
-}
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
 
 .flex {
   display: flex;
@@ -93,29 +85,6 @@ li {
 
   @include sp {
       display: inherit;
-  }
-}
-.title {
-  text-align: center;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 5rem;
-
-  @include sp {
-      font-size: 2.4rem;
-  }
-}
-
-.contents__title {
-  font-size: 4rem;
-  line-height: 1;
-  text-align: center;
-  font-weight: 900;
-
-  @include sp {
-    font-size: 2.6rem;
-    line-height: calc(39 / 26);
   }
 }
 
@@ -160,19 +129,6 @@ li {
     padding: 2rem 4.1rem;
     font-size: 2rem;
   }
-  
-
-  &::after {
-      content: "";
-      position: absolute;
-      right: 3rem;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #000;
-      border-radius: 50%;
-      width: 1rem;
-      height: 1rem;
-  }
 }
 button {
   display: inline-block;
@@ -204,6 +160,7 @@ button:hover {
   .contents__width {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     @include sp {
       justify-content: space-between;
@@ -237,9 +194,13 @@ button:hover {
   align-items: center;
   justify-content: flex-end;
 
+  @include md {
+    margin-left: 5%;
+  }
+
   @include sp {
       display: none;
-    }
+  }
 
   ul {
     height: 10.1rem;
@@ -247,9 +208,13 @@ button:hover {
     align-items: center;
     justify-content: flex-end;
 
+    @include md {
+      gap: 2.8rem;
+    }
+
     @include sp {
         display: none;
-  }
+    }
   li a {
     font-size: 2rem;
     line-height: calc(36 / 20);
@@ -272,14 +237,14 @@ button:hover {
     justify-content: center;
     align-items: center;
 
-    @include sp {
-      display: none;
+    @include md {
+      max-width: 24rem;
+      padding: 1.6rem 1.1rem;
+      font-size: 1.8rem;
     }
 
-    &:hover {
-      background: #fff;
-      color: #005BAC;
-      opacity: 1;
+    @include sp {
+      display: none;
     }
   }
 }
@@ -409,14 +374,13 @@ button:hover {
   width: 100%;
   margin-bottom: 13rem;
 
-  @include md {
-      margin: 9.5rem auto;
-  }
   @include sp {
     background: url("/assets/img/mainVIsual_sp.jpg") no-repeat;
     margin: 7rem auto 0;
     top: 0;
     height: auto;
+    background-size: contain;
+    background-position: top;
   }
 
   .top__item--container {
@@ -472,7 +436,7 @@ button:hover {
         font-family: 'Poppins', sans-serif;
       }
       .award {
-        font-size: 4.2rem;
+        font-size: 5.2rem;
         display: flex;
         align-items: baseline;
         line-height: 0.9;
@@ -484,7 +448,7 @@ button:hover {
         }
       }
       .large {
-          font-size: 5.4rem;
+          font-size: 7.4rem;
 
           @include sp {
             font-size: 3.8rem;
@@ -505,8 +469,8 @@ button:hover {
       }
     }
   .title-begin {
-    font-size: 1.4rem;
-      line-height: calc(36 / 14);
+    font-size: 3.3rem;
+      line-height: calc(36 / 33);
 
       @include sp {
         font-size: 1.4rem;
@@ -540,6 +504,9 @@ button:hover {
     padding-top: 10rem;
     justify-content: center;
 
+    @include md {
+      gap: 2.5rem;
+    }
     @include sp {
       font-size: 2rem;
       padding-top: 4.2rem;
@@ -554,6 +521,12 @@ button:hover {
     font-weight: 700;
     line-height: calc(36 / 24);
     color: #fff;
+
+    @include md {
+      width: 28rem;
+      padding: 1.8rem 3.8rem;
+      font-size: 2rem;
+    }
 
     @include sp {
       font-size: 1.6rem;
@@ -585,6 +558,10 @@ button:hover {
   .contents__width {
     max-width: 120rem;
     padding: 0 2rem;
+
+    @include md {
+      max-width: 100%;
+    }
 
     @include sp {
       max-width: 120rem;
@@ -634,6 +611,22 @@ button:hover {
       @include sp {
         display: unset;
       }
+    }
+  }
+  .reason-pic {
+    max-width: 100%;
+    width: 49%;
+    height: auto;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+  .reason__body {
+    width: 51%;
+
+    @include sp {
+      width: 100%;
     }
   }
   .reason__body--point {
@@ -694,7 +687,7 @@ button:hover {
     padding: 0 2rem;
 
     @include sp {
-      padding: 0 3.5rem;
+      padding: 0 1.6rem;
     }
   }
   .contact__catch {
@@ -716,18 +709,21 @@ button:hover {
 .course {
   padding: 7.2rem 0;
 
+  @include sp {
+    padding: 6.4rem 0 6.3rem;
+  }
+
   .contents__width {
     max-width: 120rem;
     padding: 0 2rem;
+
+    @include sp {
+      max-width: 120rem;
+      padding: 0;
+    }
   }
   .course__container {
     text-align: center;
-
-    @include sp {
-      padding: 5.2rem 0 6.5rem;
-      margin: auto;
-      max-width: 1080px;
-    }
   }
   .course__title {
     font-size: 3.6rem;
@@ -736,8 +732,8 @@ button:hover {
     padding: 0 0 3.2rem 0;
 
     @include sp {
-        font-size: 36px;
-        margin-bottom: 1.4rem;
+        font-size: 2.8rem;
+        padding: 0 0 2.1rem 0;
     }
   }
 
@@ -745,10 +741,6 @@ button:hover {
   .st-theme-basic {
     border: none;
     position: relative;
-
-    @include sp {
-        padding-top: 0.59rem;
-    }
   }
 
   /* tabs navigation */
@@ -757,7 +749,8 @@ button:hover {
     column-gap: 3.5rem;
 
     @include sp {
-        column-gap: 1.4rem;
+      column-gap: 1.5rem;
+      padding: 0 1.6rem;
     }
   }
   .st-theme-basic >.nav {
@@ -772,9 +765,9 @@ button:hover {
     border-radius: 12px 12px 0 0;
 
     @include sp {
-      font-size: 26px;
-      padding-top: 1.7rem;
-      padding-bottom: 2.3rem;
+      padding: 2rem 0;
+      font-size: 1.8rem;
+      line-height: calc(36 / 18);
     }
   }
   /* アクティブ状態 */
@@ -798,20 +791,29 @@ button:hover {
     border-radius: 0 0 12px 12px;
 
     @include sp {
-      justify-content: space-between;
-      flex-direction: row;
-      padding-bottom: 1rem;
+      padding: 2.8rem 1.6rem;
+      flex-direction: column;
+      gap: 0;
     }
+  }
+  .tab__content--item {
+    width: 48%;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+  button {
+    width: 100%;
   }
   .tab__content--title {
     line-height: calc(36 / 20);
     padding-top: 1.6rem;
     font-size: 2rem;
     font-weight: 700;
+
     @include sp {
-      font-size: 24px;
-      letter-spacing: 0rem;
-      line-height: 1.3;
+      padding: 1.2rem 0 2.8rem;
     }
 
     i {
@@ -820,6 +822,12 @@ button:hover {
       font-weight: 700;
       margin-right: 0.7rem;
       text-shadow: 1px 1px 0 #005BAC, -1px -1px 0 #005BAC, 1px -1px 0 #005BAC, -1px 1px 0 #005BAC;
+
+      @include sp {
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 0.7rem;
+      }
     }
   }
   .tab__content--item img {
@@ -836,17 +844,25 @@ button:hover {
 .cost {
   padding: 7.2rem 0;
 
+  @include sp {
+    padding: 6.4rem 0;
+  }
+
   .contents__width {
     max-width: 60rem;
     padding: 0 2rem;
+
+    @include sp {
+      max-width: 60rem;
+      padding: 0 1.9rem;
+    }
   }
   .cost__container {
     text-align: center;
 
     @include sp {
-      padding: 5.2rem 0 6.5rem;
+      padding: 0;
       margin: auto;
-      max-width: 1080px;
     }
   }
   .cost__title {
@@ -854,6 +870,11 @@ button:hover {
     font-weight: 700;
     line-height: 1;
     padding: 0 0 3.2rem 0;
+
+    @include sp {
+      font-size: 2.3rem;
+      padding: 0 0 2.3rem 0;
+    }
   }
 
   table {
@@ -880,7 +901,7 @@ button:hover {
       font-size: 16px;
 
       @include sp {
-          font-size: 18px;
+        font-size: 16px;
       }
   }
   td {
@@ -898,7 +919,12 @@ button:hover {
       width: 14.1rem;
 
       @include sp {
-          padding: 8px;
+        padding: 2rem 0;
+        font-size: 1.6rem;
+        line-height: 2;
+        width: 11.4rem;
+        line-height: calc(36 /16);
+        border-right: none;
       }
   }
   .table__cost {
@@ -906,6 +932,7 @@ button:hover {
 
       @include sp {
           padding-left: 0;
+          border-left: none;
       }
   }
   .table__body--time {
@@ -914,8 +941,8 @@ button:hover {
       padding: 2.6rem;
 
       @include sp {
-          font-size: 18px;
-          padding: 10px;
+          font-size: 1.4rem;
+          padding: 2.1rem 0 2rem;
       }
   }
   .tabl__body--cost {
@@ -927,7 +954,8 @@ button:hover {
       letter-spacing: -0.01rem;
 
       @include sp {
-          font-size: 1.8rem;
+          font-size: 2.8rem;
+          line-height: calc(36 /28);
           top: -6px;
       }
   }
@@ -937,7 +965,8 @@ button:hover {
     font-weight: 500;
 
       @include sp {
-          font-size: 16px;
+          font-size: 1.6rem;
+          line-height: calc(36 /16);
       }
   }
 }
@@ -949,18 +978,44 @@ button:hover {
   .footer__container {
     background-color: #DDDDDD;
   }
+  .no-pc {
+    display: none;
 
+    @include sp {
+      display: unset;
+    }
+  }
+  .no-sp {
+    display: unset;
+
+    @include sp {
+      display: none;
+    }
+  }
   .footer__top {
     display: flex;
-
     padding-bottom: 5rem;
+
+    @include sp {
+      padding-bottom: 2.8rem;
+      height: 100%;
+      flex-direction: column;
+    }
   }
   .footer__left {
     position: relative;
 
+    @include sp {
+      height: auto;
+    }
+
     button:hover {
       opacity: 0.5;
       background: url("/assets/img/pht_qa01.jpg");
+
+      @include sp {
+        background: url("/assets/img/footer-hover.sp01.jpg");
+      }
     }
 
     .footer__text {
@@ -970,6 +1025,12 @@ button:hover {
       top: 50%;
       left: 50%;
       transform: translateX(-50%);
+
+      @include sp {
+        font-size: 2.2rem;
+        left: 7%;
+        transform: translateY(-50%);
+      }
     }
   }
   .footer__right {
@@ -978,6 +1039,10 @@ button:hover {
     button:hover {
       opacity: 0.5;
       background: url("/assets/img/pht_qa02.jpg");
+
+      @include sp {
+        background: url("/assets/img/footer-hover.sp02.jpg");
+      }
     }
 
     .footer__text {
@@ -987,17 +1052,30 @@ button:hover {
       top: 50%;
       left: 50%;
       transform: translateX(-50%);
+
+      @include sp {
+        display: none;
+      }
     }
   }
   .footer__bottom {
     text-align: center;
     padding: 0 0 5.1rem 0;
     background-color: #DDDDDD;
+
+    @include sp {
+      padding: 0 0 3.2rem 0;
+    }
   }
   .copyright {
     padding: 5rem 0 5.1rem;
     font-size: 1.3rem;
     text-align: center;
     background-color: #DDDDDD;
+
+    @include sp {
+      padding: 3.2rem 0;
+      font-size: 1.3rem;
+    }
   }
 }
