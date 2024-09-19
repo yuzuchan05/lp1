@@ -98,7 +98,7 @@ li {
 
 .contact__btn {
   width: 36rem;
-  padding: 1.9rem 4.1rem;
+  padding: 2rem 4.1rem 2.2rem 6rem;
   background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
   border-radius: 38px;
   font-size: 2.4rem;
@@ -179,7 +179,7 @@ button:hover {
 .pc-nav {
   height: 10.1rem;
   gap: 4.8rem;
-  margin-left: 9%;
+  margin-left: 8.3%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -275,7 +275,7 @@ button:hover {
 }
 
 .hamburger__icon svg {
-  font-size: 3rem;
+  font-size: 3.4rem;
   color: #fff;
 }
 
@@ -381,13 +381,13 @@ button:hover {
 .top .top__item--container {
   display: flex;
   align-items: flex-start;
-  padding: 11rem 0 5rem 3rem;
+  padding: 10.5rem 0 4.9rem 3rem;
   max-width: 116rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   .top .top__item--container {
-    padding: 3.4rem 0 0rem 2rem;
+    padding: 3rem 0 0rem 2rem;
     max-width: 16.3rem;
     margin: 0;
   }
@@ -410,7 +410,9 @@ button:hover {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1.3rem;
+  max-width: 24rem;
+  padding: 0 1.8rem;
 }
 @media screen and (max-width: 767px) {
   .top .item__award {
@@ -439,12 +441,12 @@ button:hover {
   display: flex;
   align-items: baseline;
   line-height: 0.9;
-  padding-top: 1.6rem;
+  padding: 1.3rem 0 0 1.3rem;
 }
 @media screen and (max-width: 767px) {
   .top .item__award .award {
     font-size: 2.5rem;
-    padding-top: 0;
+    padding: 0.3rem 0.3rem 0 0;
   }
 }
 .top .item__award .large {
@@ -466,7 +468,7 @@ button:hover {
     margin: 4rem 0;
     max-width: 116rem;
     margin: 0 auto;
-    padding: 1.6rem 0 0 1.6rem;
+    padding: 2.3rem 0 0 1.6rem;
   }
 }
 .top .title-begin {
@@ -490,7 +492,7 @@ button:hover {
   .top .title-main {
     font-size: 2.5rem;
     line-height: 1.44;
-    padding-top: 0.5rem;
+    padding-top: 0;
   }
 }
 .top .btn__content {
@@ -499,7 +501,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .top .btn__content {
     font-size: 2rem;
-    padding-top: 1.6rem;
+    padding-top: 0;
   }
 }
 .top .btn-form {
@@ -515,7 +517,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .top .btn-form {
     font-size: 2rem;
-    padding-top: 4.2rem;
+    padding-top: 5.8rem;
   }
 }
 .top li a {
@@ -555,11 +557,11 @@ button:hover {
 /* reason
 -----------------------------------------*/
 .reason {
-  padding: 9rem 0 8rem;
+  padding: 9rem 0 2.6rem;
 }
 @media screen and (max-width: 767px) {
   .reason {
-    padding: 2.4rem 0 0;
+    padding: 2rem 0 0;
   }
 }
 .reason .contents__width {
@@ -569,23 +571,24 @@ button:hover {
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .reason .contents__width {
     max-width: 100%;
+    padding: 0 2rem;
   }
 }
 @media screen and (max-width: 767px) {
   .reason .contents__width {
     max-width: 120rem;
-    padding: 0 2rem;
+    padding: 0 1.6rem;
   }
 }
 .reason .reason__container {
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 3.1rem;
   font-weight: 700;
   line-height: 1;
 }
 @media screen and (max-width: 767px) {
   .reason .reason__container {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .reason .reason__title {
@@ -630,6 +633,7 @@ button:hover {
   max-width: 100%;
   width: 49%;
   height: auto;
+  min-height: 22rem;
 }
 @media screen and (max-width: 767px) {
   .reason .reason-pic {
@@ -650,11 +654,13 @@ button:hover {
   font-weight: 700;
   font-style: italic;
   font-family: "Poppins", sans-serif;
+  padding-top: 0.5rem;
 }
 @media screen and (max-width: 767px) {
   .reason .reason__body--point {
-    font-size: 2rem;
-    padding-top: 0.4rem;
+    font-size: 2.2rem;
+    padding-top: 1.2rem;
+    letter-spacing: 0.09rem;
   }
 }
 .reason .reason__body--point span {
@@ -675,8 +681,8 @@ button:hover {
 @media screen and (max-width: 767px) {
   .reason .reason__catch {
     font-size: 2rem;
-    padding: 0.2rem 0 1.6rem 0;
-    line-height: 1.8;
+    padding: 0.3rem 0 0.8rem 0;
+    line-height: 1.53;
   }
 }
 .reason .reason__text {
@@ -685,7 +691,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .reason .reason__text {
-    padding-bottom: 3.6rem;
+    padding-bottom: 3.4rem;
   }
 }
 
@@ -693,12 +699,15 @@ button:hover {
 -------------------------------------------- */
 .contact {
   background-color: #FFEDED;
-  padding: 5.6rem 0;
+  padding: 4.9rem 0 5.6rem;
 }
 @media screen and (max-width: 767px) {
   .contact {
     padding: 4rem 0;
   }
+}
+.contact02 {
+  padding: 4.5rem 0 5.6rem;
 }
 .contact .contents__width {
   max-width: 120rem;
@@ -712,7 +721,7 @@ button:hover {
 .contact .contact__catch {
   font-size: 1.6rem;
   line-height: 2.625;
-  padding: 0 0 2rem;
+  padding: 0 0 1rem;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
@@ -726,7 +735,7 @@ button:hover {
 /* course
 -------------------------------------------- */
 .course {
-  padding: 7.2rem 0;
+  padding: 8.2rem 0 0;
   /* tabs */
   /* tabs navigation */
   /* アクティブ状態 */
@@ -734,7 +743,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .course {
-    padding: 6.4rem 0 6.3rem;
+    padding: 7rem 0 6.3rem;
   }
 }
 .course .contents__width {
@@ -754,12 +763,12 @@ button:hover {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1;
-  padding: 0 0 3.2rem 0;
+  padding: 0 0 4.2rem 0;
 }
 @media screen and (max-width: 767px) {
   .course .course__title {
     font-size: 2.8rem;
-    padding: 0 0 2.1rem 0;
+    padding: 0 0 2.9rem 1.1rem;
   }
 }
 .course .st-theme-basic {
@@ -791,7 +800,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .course .tab.st-theme-basic > .nav .nav-link {
-    padding: 2rem 0;
+    padding: 1.3rem 0;
     font-size: 1.8rem;
     line-height: 2;
   }
@@ -807,12 +816,11 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 3.1rem;
-       column-gap: 3.1rem;
-  row-gap: 4rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 3.5rem;
   background-color: #F2F9FF;
   padding: 3.2rem;
-  padding-bottom: 1.2rem;
   border-radius: 0 0 12px 12px;
 }
 @media screen and (max-width: 767px) {
@@ -822,8 +830,18 @@ button:hover {
     gap: 0;
   }
 }
+.course .st > .tab-content {
+  position: relative;
+  overflow: hidden;
+  height: 92.7rem !important;
+}
+@media screen and (max-width: 767px) {
+  .course .st > .tab-content {
+    min-height: 121.2rem;
+  }
+}
 .course .tab__content--item {
-  width: 48%;
+  width: 48.3%;
 }
 @media screen and (max-width: 767px) {
   .course .tab__content--item {
@@ -833,9 +851,14 @@ button:hover {
 .course button {
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .course button {
+    min-height: 22rem;
+  }
+}
 .course .tab__content--title {
   line-height: 1.8;
-  padding-top: 1.6rem;
+  padding-top: 1.5rem;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -846,10 +869,10 @@ button:hover {
 }
 .course .tab__content--title i {
   color: #005BAC;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 700;
   margin-right: 0.7rem;
-  text-shadow: 1px 1px 0 #005BAC, -1px -1px 0 #005BAC, 1px -1px 0 #005BAC, -1px 1px 0 #005BAC;
+  text-shadow: 0.5px 0.5px 0 #005BAC, -0.5px -0.5px 0 #005BAC, 0.5px -0.5px 0 #005BAC, -0.5px 0.5px 0 #005BAC;
 }
 @media screen and (max-width: 767px) {
   .course .tab__content--title i {
@@ -870,7 +893,7 @@ button:hover {
 /* cost
 -------------------------------------------- */
 .cost {
-  padding: 7.2rem 0;
+  padding: 8.2rem 0 7rem;
 }
 @media screen and (max-width: 767px) {
   .cost {
@@ -878,7 +901,7 @@ button:hover {
   }
 }
 .cost .contents__width {
-  max-width: 60rem;
+  max-width: 64rem;
   padding: 0 2rem;
 }
 @media screen and (max-width: 767px) {
@@ -900,7 +923,7 @@ button:hover {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1;
-  padding: 0 0 3.2rem 0;
+  padding: 0 0 4.2rem 0;
 }
 @media screen and (max-width: 767px) {
   .cost .cost__title {
@@ -948,7 +971,7 @@ button:hover {
   }
 }
 .cost .cost--time {
-  padding: 2.4rem;
+  padding: 1.8rem 2.4rem;
   font-size: 1.8rem;
   line-height: 2;
   width: 14.1rem;
@@ -964,7 +987,8 @@ button:hover {
   }
 }
 .cost .table__cost {
-  padding-left: 0.1rem;
+  padding-right: 0.4rem;
+  letter-spacing: 0.15rem;
 }
 @media screen and (max-width: 767px) {
   .cost .table__cost {
@@ -975,7 +999,7 @@ button:hover {
 .cost .table__body--time {
   font-size: 1.8rem;
   line-height: 2;
-  padding: 2.6rem;
+  padding: 2rem 2.6rem;
 }
 @media screen and (max-width: 767px) {
   .cost .table__body--time {
@@ -989,7 +1013,7 @@ button:hover {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.125;
-  letter-spacing: -0.01rem;
+  padding: 1.8rem 0;
 }
 @media screen and (max-width: 767px) {
   .cost .tabl__body--cost {
@@ -1021,6 +1045,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .footer .no-pc {
     display: unset;
+    width: 100%;
   }
 }
 .footer .no-sp {
@@ -1033,7 +1058,7 @@ button:hover {
 }
 .footer .footer__top {
   display: flex;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 767px) {
   .footer .footer__top {
@@ -1042,12 +1067,21 @@ button:hover {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer button {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 .footer .footer__left {
   position: relative;
 }
 @media screen and (max-width: 767px) {
   .footer .footer__left {
     height: auto;
+    display: inline-block;
+    vertical-align: top;
   }
 }
 .footer .footer__left button:hover {
@@ -1090,9 +1124,9 @@ button:hover {
   position: absolute;
   font-size: 3.2rem;
   color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 48%;
+  left: 35%;
+  transform: translateY(-48%);
 }
 @media screen and (max-width: 767px) {
   .footer .footer__right .footer__text {
@@ -1114,6 +1148,7 @@ button:hover {
   font-size: 1.3rem;
   text-align: center;
   background-color: #DDDDDD;
+  letter-spacing: 0.05rem;
 }
 @media screen and (max-width: 767px) {
   .footer .copyright {

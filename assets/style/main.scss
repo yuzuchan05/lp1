@@ -115,7 +115,7 @@ li {
 
 .contact__btn {
   width: 36rem;
-  padding: 1.9rem 4.1rem;
+  padding: 2rem 4.1rem 2.2rem 6rem;
   background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
   border-radius: 38px;
   font-size: 2.4rem;
@@ -190,7 +190,7 @@ button:hover {
 .pc-nav {
   height: 10.1rem;
   gap: 4.8rem;
-  margin-left: 9%;
+  margin-left: 8.3%;
   align-items: center;
   justify-content: flex-end;
 
@@ -277,7 +277,7 @@ button:hover {
   }
 }
 .hamburger__icon svg {
-  font-size: 3rem;
+  font-size: 3.4rem;
   color: #fff;
 }
 
@@ -386,12 +386,12 @@ button:hover {
   .top__item--container {
     display: flex;
     align-items: flex-start;
-    padding: 11rem 0 5rem 3rem;
+    padding: 10.5rem 0 4.9rem 3rem;
     max-width: 116rem;
     margin: 0 auto;
 
     @include sp {
-      padding: 3.4rem 0 0rem 2rem;
+      padding: 3rem 0 0rem 2rem;
       max-width: 16.3rem;
       margin: 0;
     }
@@ -413,7 +413,9 @@ button:hover {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1.3rem;
+    max-width: 24rem;
+    padding: 0 1.8rem;
 
     @include sp {
       margin-top: 0.5rem;
@@ -440,11 +442,11 @@ button:hover {
         display: flex;
         align-items: baseline;
         line-height: 0.9;
-        padding-top: 1.6rem;
+        padding: 1.3rem 0 0 1.3rem;
 
         @include sp {
           font-size: 2.5rem;
-          padding-top: 0;
+          padding: 0.3rem 0.3rem 0 0;
         }
       }
       .large {
@@ -465,7 +467,7 @@ button:hover {
         margin: 4rem 0;
         max-width: 116rem;
         margin: 0 auto;
-        padding: 1.6rem 0 0 1.6rem;
+        padding: 2.3rem 0 0 1.6rem;
       }
     }
   .title-begin {
@@ -487,7 +489,7 @@ button:hover {
       @include sp {
         font-size: 2.5rem;
         line-height: calc(36 / 25);
-        padding-top: 0.5rem;
+        padding-top: 0;
       }
   }
 
@@ -496,7 +498,7 @@ button:hover {
 
     @include sp {
       font-size: 2rem;
-      padding-top: 1.6rem;
+      padding-top: 0;
     }
   }
   .btn-form {
@@ -509,7 +511,7 @@ button:hover {
     }
     @include sp {
       font-size: 2rem;
-      padding-top: 4.2rem;
+      padding-top: 5.8rem;
     }
   }
 
@@ -549,10 +551,10 @@ button:hover {
 /* reason
 -----------------------------------------*/
 .reason {
-  padding: 9rem 0 8rem;
+  padding: 9rem 0 2.6rem;
 
   @include sp {
-    padding: 2.4rem 0 0;
+    padding: 2rem 0 0;
   }
 
   .contents__width {
@@ -561,21 +563,22 @@ button:hover {
 
     @include md {
       max-width: 100%;
+      padding: 0 2rem;
     }
 
     @include sp {
       max-width: 120rem;
-      padding: 0 2rem;
+      padding: 0 1.6rem;
     }
   }
   .reason__container {
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 3.1rem;
     font-weight: 700;
     line-height: 1;
 
     @include sp {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
   .reason__title {
@@ -617,6 +620,7 @@ button:hover {
     max-width: 100%;
     width: 49%;
     height: auto;
+    min-height: 22rem;
 
     @include sp {
       width: 100%;
@@ -635,10 +639,12 @@ button:hover {
     font-weight: 700;
     font-style: italic;
     font-family: 'Poppins', sans-serif;
+    padding-top: .5rem;
 
     @include sp {
-      font-size: 2rem;
-      padding-top: 0.4rem;
+      font-size: 2.2rem;
+      padding-top: 1.2rem;
+      letter-spacing: 0.09rem;
     }
 
     span {
@@ -658,8 +664,8 @@ button:hover {
 
     @include sp {
       font-size: 2rem;
-      padding: 0.2rem 0 1.6rem 0;
-      line-height: calc(36 / 20);
+      padding: 0.3rem 0 0.8rem 0;
+      line-height: 1.53;
     }
   }
   .reason__text {
@@ -667,7 +673,7 @@ button:hover {
     line-height: calc(28 / 16);
 
     @include sp {
-      padding-bottom: 3.6rem;
+      padding-bottom: 3.4rem;
     }
   }
 }
@@ -676,12 +682,15 @@ button:hover {
 -------------------------------------------- */
 .contact {
   background-color: #FFEDED;
-  padding: 5.6rem 0;
+  padding: 4.9rem 0 5.6rem;
 
   @include sp {
     padding: 4rem 0;
   }
 
+  &02 {
+    padding: 4.5rem 0 5.6rem;
+  }
   .contents__width {
     max-width: 120rem;
     padding: 0 2rem;
@@ -693,7 +702,7 @@ button:hover {
   .contact__catch {
     font-size: 1.6rem;
     line-height: calc(42 / 16);
-    padding: 0 0 2rem;
+    padding: 0 0 1rem;
     text-align: center;
 
     @include sp {
@@ -707,10 +716,10 @@ button:hover {
 /* course
 -------------------------------------------- */
 .course {
-  padding: 7.2rem 0;
+  padding: 8.2rem 0 0;
 
   @include sp {
-    padding: 6.4rem 0 6.3rem;
+    padding: 7rem 0 6.3rem;
   }
 
   .contents__width {
@@ -729,11 +738,11 @@ button:hover {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1;
-    padding: 0 0 3.2rem 0;
+    padding: 0 0 4.2rem 0;
 
     @include sp {
         font-size: 2.8rem;
-        padding: 0 0 2.1rem 0;
+        padding: 0 0 2.9rem 1.1rem;
     }
   }
 
@@ -765,7 +774,7 @@ button:hover {
     border-radius: 12px 12px 0 0;
 
     @include sp {
-      padding: 2rem 0;
+      padding: 1.3rem 0;
       font-size: 1.8rem;
       line-height: calc(36 / 18);
     }
@@ -783,11 +792,10 @@ button:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 3.1rem;
-    row-gap: 4rem;
+    column-gap: 3rem;
+    row-gap: 3.5rem;
     background-color: #F2F9FF;
     padding: 3.2rem;
-    padding-bottom: 1.2rem;
     border-radius: 0 0 12px 12px;
 
     @include sp {
@@ -796,8 +804,17 @@ button:hover {
       gap: 0;
     }
   }
+  .st>.tab-content {
+    position: relative;
+    overflow: hidden;
+    height: 92.7rem !important;
+
+    @include sp {
+      min-height: 121.2rem;
+    }
+  }
   .tab__content--item {
-    width: 48%;
+    width: 48.3%;
 
     @include sp {
       width: 100%;
@@ -805,10 +822,14 @@ button:hover {
   }
   button {
     width: 100%;
+
+    @include sp {
+      min-height: 22rem;
+    }
   }
   .tab__content--title {
     line-height: calc(36 / 20);
-    padding-top: 1.6rem;
+    padding-top: 1.5rem;
     font-size: 2rem;
     font-weight: 700;
 
@@ -818,10 +839,10 @@ button:hover {
 
     i {
       color: #005BAC;
-      font-size: 23px;
+      font-size: 21px;
       font-weight: 700;
       margin-right: 0.7rem;
-      text-shadow: 1px 1px 0 #005BAC, -1px -1px 0 #005BAC, 1px -1px 0 #005BAC, -1px 1px 0 #005BAC;
+      text-shadow: 0.5px 0.5px 0 #005BAC, -0.5px -0.5px 0 #005BAC, 0.5px -0.5px 0 #005BAC, -0.5px 0.5px 0 #005BAC;
 
       @include sp {
         font-size: 20px;
@@ -842,14 +863,14 @@ button:hover {
 /* cost
 -------------------------------------------- */
 .cost {
-  padding: 7.2rem 0;
+  padding: 8.2rem 0 7rem;
 
   @include sp {
     padding: 6.4rem 0;
   }
 
   .contents__width {
-    max-width: 60rem;
+    max-width: 64rem;
     padding: 0 2rem;
 
     @include sp {
@@ -869,7 +890,7 @@ button:hover {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1;
-    padding: 0 0 3.2rem 0;
+    padding: 0 0 4.2rem 0;
 
     @include sp {
       font-size: 2.3rem;
@@ -913,7 +934,7 @@ button:hover {
       }
   }
   .cost--time {
-      padding: 2.4rem;
+      padding: 1.8rem 2.4rem;
       font-size: 1.8rem;
       line-height: calc(36 /18);
       width: 14.1rem;
@@ -928,7 +949,8 @@ button:hover {
       }
   }
   .table__cost {
-      padding-left: 0.1rem;
+    padding-right: 0.4rem;
+    letter-spacing: 0.15rem;
 
       @include sp {
           padding-left: 0;
@@ -938,7 +960,7 @@ button:hover {
   .table__body--time {
       font-size: 1.8rem;
       line-height: calc(36 /18);
-      padding: 2.6rem;
+      padding: 2rem 2.6rem;
 
       @include sp {
           font-size: 1.4rem;
@@ -951,7 +973,7 @@ button:hover {
       font-size: 3.2rem;
       font-weight: 700;
       line-height: calc(36 /32);
-      letter-spacing: -0.01rem;
+      padding: 1.8rem 0;
 
       @include sp {
           font-size: 2.8rem;
@@ -983,6 +1005,7 @@ button:hover {
 
     @include sp {
       display: unset;
+      width: 100%;
     }
   }
   .no-sp {
@@ -994,7 +1017,7 @@ button:hover {
   }
   .footer__top {
     display: flex;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 
     @include sp {
       padding-bottom: 2.8rem;
@@ -1002,11 +1025,20 @@ button:hover {
       flex-direction: column;
     }
   }
+  button {
+    @include sp {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
   .footer__left {
     position: relative;
 
     @include sp {
       height: auto;
+      display: inline-block;
+      vertical-align: top;
     }
 
     button:hover {
@@ -1049,9 +1081,9 @@ button:hover {
       position: absolute;
       font-size: 3.2rem;
       color: #fff;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 48%;
+      left: 35%;
+      transform: translateY(-48%);
 
       @include sp {
         display: none;
@@ -1072,6 +1104,7 @@ button:hover {
     font-size: 1.3rem;
     text-align: center;
     background-color: #DDDDDD;
+    letter-spacing: 0.05rem;
 
     @include sp {
       padding: 3.2rem 0;
