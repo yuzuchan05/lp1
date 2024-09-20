@@ -388,7 +388,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .top .top__item--container {
     padding: 3rem 0 0rem 2rem;
-    max-width: 16.3rem;
+    max-width: 16.7rem;
     margin: 0;
   }
 }
@@ -404,6 +404,11 @@ button:hover {
 .top .item__img {
   max-width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .top .item__img {
+    height: 7.4rem;
+  }
+}
 .top .item__award {
   display: flex;
   flex-direction: column;
@@ -417,6 +422,8 @@ button:hover {
 @media screen and (max-width: 767px) {
   .top .item__award {
     margin-top: 0.5rem;
+    padding: 0 2rem 0 2rem;
+    max-width: 9rem;
   }
 }
 .top .item__award p {
@@ -709,6 +716,11 @@ button:hover {
 .contact02 {
   padding: 4.5rem 0 5.6rem;
 }
+@media screen and (max-width: 767px) {
+  .contact02 {
+    padding: 4.2rem 0 4.5rem;
+  }
+}
 .contact .contents__width {
   max-width: 120rem;
   padding: 0 2rem;
@@ -743,7 +755,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .course {
-    padding: 7rem 0 6.3rem;
+    padding: 7rem 0 6.2rem;
   }
 }
 .course .contents__width {
@@ -864,7 +876,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .course .tab__content--title {
-    padding: 1.2rem 0 2.8rem;
+    padding: 1.2rem 0 2.1rem;
   }
 }
 .course .tab__content--title i {
@@ -876,7 +888,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .course .tab__content--title i {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin-right: 0.7rem;
   }
@@ -887,6 +899,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .course .tab__content--item img {
     border-radius: 0.3rem;
+    min-height: 22rem;
   }
 }
 
@@ -897,7 +910,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .cost {
-    padding: 6.4rem 0;
+    padding: 7rem 0 6.2rem;
   }
 }
 .cost .contents__width {
@@ -907,7 +920,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .cost .contents__width {
     max-width: 60rem;
-    padding: 0 1.9rem;
+    padding: 0 1.6rem;
   }
 }
 .cost .cost__container {
@@ -927,8 +940,8 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .cost .cost__title {
-    font-size: 2.3rem;
-    padding: 0 0 2.3rem 0;
+    font-size: 2.8rem;
+    padding: 0 0 2.3rem 1.5rem;
   }
 }
 .cost table {
@@ -978,7 +991,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .cost .cost--time {
-    padding: 2rem 0;
+    padding: 1.4rem 0;
     font-size: 1.6rem;
     line-height: 2;
     width: 11.4rem;
@@ -994,6 +1007,8 @@ button:hover {
   .cost .table__cost {
     padding-left: 0;
     border-left: none;
+    padding-right: 0.8rem;
+    letter-spacing: 0.02rem;
   }
 }
 .cost .table__body--time {
@@ -1004,7 +1019,7 @@ button:hover {
 @media screen and (max-width: 767px) {
   .cost .table__body--time {
     font-size: 1.4rem;
-    padding: 2.1rem 0 2rem;
+    padding: 1.3rem 0 1rem;
   }
 }
 .cost .tabl__body--cost {
@@ -1020,6 +1035,7 @@ button:hover {
     font-size: 2.8rem;
     line-height: 1.2857142857;
     top: -6px;
+    padding: 1.17rem 0.5rem 1.1rem 0;
   }
 }
 .cost .small {
@@ -1062,7 +1078,7 @@ button:hover {
 }
 @media screen and (max-width: 767px) {
   .footer .footer__top {
-    padding-bottom: 2.8rem;
+    padding-bottom: 4.6rem;
     height: 100%;
     flex-direction: column;
   }
@@ -1154,6 +1170,7 @@ button:hover {
   .footer .copyright {
     padding: 3.2rem 0;
     font-size: 1.3rem;
+    letter-spacing: 0.04rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
