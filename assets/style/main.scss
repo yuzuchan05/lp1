@@ -2,7 +2,7 @@
 
 $sp:767px;
 $md:1200px;
-$pc:768px;
+$pc:767.9px;
 
 @mixin sp {
     @media screen and (max-width: ($sp)) {
@@ -29,7 +29,7 @@ html {
 }
 @media screen and (max-width:1200px) and (min-width:768px) {
     html {
-        font-size: 1vw;
+        font-size: calc(10px * 100vw / 1201px);
     }
 }
 
@@ -117,7 +117,7 @@ li {
   width: 36rem;
   padding: 2rem 4.1rem 2.2rem 6rem;
   background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-  border-radius: 38px;
+  border-radius: 3.8rem;
   font-size: 2.4rem;
   font-weight: 700;
   color: #fff;
@@ -149,7 +149,7 @@ button:hover {
   top: 0;
   background: #fff;
   z-index: 1000;
-  box-shadow: 0px 2px 8px #00000029;
+  box-shadow: 0 .2rem .8rem #00000029;
   opacity: 1;
 
   @include sp {
@@ -229,7 +229,7 @@ button:hover {
     width: 28.2rem;
     padding: 1.6rem 4.1rem;
     background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-    border-radius: 31px;
+    border-radius: 3.1rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
@@ -323,13 +323,13 @@ button:hover {
     font-size: 1.9rem;
     font-weight: 700;
     margin-right: 0.7rem;
-    text-shadow: 1px 1px 0 #005BAC, -1px -1px 0 #005BAC, 1px -1px 0 #005BAC, -1px 1px 0 #005BAC;
+    text-shadow: 0.1rem 0.1rem 0 #005BAC, -0.1rem -0.1rem 0 #005BAC, 0.1rem -0.1rem 0 #005BAC, -0.1rem 0.1rem 0 #005BAC;
   }
   .nav__btn {
     display: unset;
     width: 35rem;
     padding: 2rem 4.1rem;
-    border-radius: 31px;
+    border-radius: 3.1rem;
     font-size: 1.8rem;
     font-weight: 700;
     background-color: #fff;
@@ -372,15 +372,14 @@ button:hover {
   top: 10.2rem;
   height: 65.1rem;
   width: 100%;
-  margin-bottom: 13rem;
 
   @include sp {
     background: url("/assets/img/mainVIsual_sp.jpg") no-repeat;
     margin: 7rem auto 0;
     top: 0;
-    height: auto;
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: right;
+    height: 25rem;
   }
 
   .top__item--container {
@@ -407,6 +406,9 @@ button:hover {
   .item__img {
       max-width: 100%;
 
+      @include md {
+        height: 15rem;
+      }
       @include sp {
         height: 7.4rem;
       }
@@ -498,7 +500,18 @@ button:hover {
         padding-top: 0;
       }
   }
+}
 
+/* three-btn
+-----------------------------------------*/
+.three-btn {
+  margin: -3.5rem 0 0;
+  z-index: 10;
+  position: relative;
+
+  @include sp {
+    margin: 2.4rem 0 0;
+  }
   .btn__content {
     padding: 0 2rem;
 
@@ -517,14 +530,14 @@ button:hover {
     }
     @include sp {
       font-size: 2rem;
-      padding-top: 5.8rem;
+      padding-top: 0;
     }
   }
 
   li a {
     width: 34rem;
     padding: 2rem 6.2rem;
-    border-radius: 38px;
+    border-radius: 3.8rem;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: calc(36 / 24);
@@ -557,10 +570,10 @@ button:hover {
 /* reason
 -----------------------------------------*/
 .reason {
-  padding: 9rem 0 2.6rem;
+  padding: 7.8rem 0 2.6rem;
 
   @include sp {
-    padding: 2rem 0 0;
+    padding: 1.7rem 0 0;
   }
 
   .contents__width {
@@ -588,10 +601,10 @@ button:hover {
     }
   }
   .reason__title {
-    margin-bottom: 3.2rem;
+    margin-bottom: 3.5rem;
 
     @include sp {
-      margin-bottom: 1.7rem;
+      margin-bottom: 2.1rem;
     }
   }
   .large {
@@ -610,7 +623,10 @@ button:hover {
     gap: 4rem;
 
     @include sp {
-      display: unset;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      overflow: hidden;
     }
 
     &--reverse {
@@ -618,18 +634,49 @@ button:hover {
       flex-direction: row-reverse;
 
       @include sp {
-        display: unset;
+        overflow: hidden;
+        flex-direction: column;
       }
+    }
+  }
+  .reason__img {
+    max-width: 100%;
+    width: 51%;
+    height: auto;
+    display: inline-block;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    @include sp {
+      width: 100%;
+      max-width: unset;
+      height: 22rem;
     }
   }
   .reason-pic {
     max-width: 100%;
-    width: 49%;
     height: auto;
-    min-height: 22rem;
 
     @include sp {
+      max-width: unset;
       width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: left 1.1rem top 0.6rem;
+      transform-origin: center;
+      transform: scale(1.07);
+    }
+    &02 {
+      @include sp {
+        object-position: left -0.1rem top -0.2rem;
+        transform: scale(1.08);
+      }
+    }
+    &03 {
+      @include sp {
+        object-position: left -0.1rem top -0.2rem;
+        transform: scale(1.08);
+      }
     }
   }
   .reason__body {
@@ -666,7 +713,7 @@ button:hover {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: calc(36 / 24);
-    padding: 0.8rem 0 2rem 0;
+    padding: 0.65rem 0 1.8rem 0;
 
     @include sp {
       font-size: 2rem;
@@ -691,7 +738,7 @@ button:hover {
   padding: 4.9rem 0 5.6rem;
 
   @include sp {
-    padding: 4rem 0;
+    padding: 3.7rem 0;
   }
 
   &02 {
@@ -699,6 +746,11 @@ button:hover {
 
     @include sp {
       padding: 4.2rem 0 4.5rem;
+    }
+  }
+  &03 {
+    @include sp {
+      padding: 3.7rem 0 4.5rem;
     }
   }
   .contents__width {
@@ -729,7 +781,7 @@ button:hover {
   padding: 8.2rem 0 0;
 
   @include sp {
-    padding: 7rem 0 6.2rem;
+    padding: 7.4rem 0 6.2rem;
   }
 
   .contents__width {
@@ -806,7 +858,7 @@ button:hover {
     row-gap: 3.5rem;
     background-color: #F2F9FF;
     padding: 3.2rem;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 1.2rem 1.2rem;
 
     @include sp {
       padding: 2.8rem 1.6rem;
@@ -830,21 +882,34 @@ button:hover {
       width: 100%;
     }
   }
-  button {
+  .tab--item__img {
+    cursor: pointer;
+    max-width: 53.2rem;
+    overflow: hidden;
     width: 100%;
+    display: inline-block;
 
     @include sp {
-      min-height: 22rem;
+      max-width: 34.3rem;
+    }
+    img {
+      height: auto;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
     }
   }
   .tab__content--title {
     line-height: calc(36 / 20);
-    padding-top: 1.5rem;
+    padding: 1.1rem 0 0 0;
     font-size: 2rem;
     font-weight: 700;
 
     @include sp {
-      padding: 1.2rem 0 2.1rem;
+      padding: 0.8rem 0 2.2rem;
     }
 
     i {
@@ -852,17 +917,17 @@ button:hover {
       font-size: 21px;
       font-weight: 700;
       margin-right: 0.7rem;
-      text-shadow: 0.5px 0.5px 0 #005BAC, -0.5px -0.5px 0 #005BAC, 0.5px -0.5px 0 #005BAC, -0.5px 0.5px 0 #005BAC;
+      text-shadow: 0.05rem 0.05rem 0 #005BAC, -0.05rem -0.05rem 0 #005BAC, 0.05rem -0.05rem 0 #005BAC, -0.05rem 0.05rem 0 #005BAC;
 
       @include sp {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 700;
         margin-right: 0.7rem;
       }
     }
   }
   .tab__content--item img {
-    border-radius: 6px;
+    border-radius: 0.6rem;
 
     @include sp {
       border-radius: 0.3rem;
@@ -912,15 +977,15 @@ button:hover {
   table {
       border-collapse: collapse;
       width: 100%;
-      border: 3px solid #ccc;
+      border: 0.3rem solid #ccc;
 
       @include sp {
-          min-height: 343px;
+          min-height: 34.3rem;
           margin-bottom: 0;
       }
   }
   th, td {
-      border: 1px solid #ccc;
+      border: 0.1rem solid #ccc;
       text-align: center;
       padding: 0.6rem 0.2rem 0.6rem 0.5rem;
 
@@ -930,10 +995,10 @@ button:hover {
   }
   th {
       background-color: #f5f5f5;
-      font-size: 16px;
+      font-size: 1.6rem;
 
       @include sp {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
   }
   td {
@@ -991,7 +1056,7 @@ button:hover {
       @include sp {
           font-size: 2.8rem;
           line-height: calc(36 /28);
-          top: -6px;
+          top: -0.6rem;
           padding: 1.17rem 0.5rem 1.1rem 0;
       }
   }
@@ -1010,10 +1075,8 @@ button:hover {
 /* footer
 -------------------------------------------- */
 .footer {
-
-  .footer__container {
     background-color: #DDDDDD;
-  }
+
   .no-pc {
     display: none;
 
@@ -1039,58 +1102,101 @@ button:hover {
       flex-direction: column;
     }
   }
-  button {
-    @include sp {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
   .footer__left {
     position: relative;
+    cursor: pointer;
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
 
     @include sp {
       height: auto;
-      display: inline-block;
       vertical-align: top;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
     }
 
-    button:hover {
-      opacity: 0.5;
-      background: url("/assets/img/pht_qa01.jpg");
+    a {
+      cursor: pointer;
+      overflow: hidden;
+      width: 100%;
+      display: inline-block;
 
       @include sp {
-        background: url("/assets/img/footer-hover.sp01.jpg");
+        min-width: 37.5rem;
+        max-width: unset;
+      }
+      img {
+        height: auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background: url("/assets/img/pht_qa01.jpg");
+          transform: scale(1.2);
+          opacity: 0.5;
+
+          @include sp {
+            background: url("/assets/img/footer-hover.sp01.jpg");
+          }
+        }
       }
     }
-
     .footer__text {
       position: absolute;
       font-size: 3.2rem;
       color: #fff;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 47%;
+      left: 38%;
+      transform: translateY(-47%);
 
       @include sp {
-        font-size: 2.2rem;
-        left: 7%;
-        transform: translateY(-50%);
+        display: none;
       }
     }
   }
   .footer__right {
     position: relative;
+    cursor: pointer;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
-    button:hover {
-      opacity: 0.5;
-      background: url("/assets/img/pht_qa02.jpg");
-
-      @include sp {
-        background: url("/assets/img/footer-hover.sp02.jpg");
-      }
+    @include sp {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
     }
 
+    a {
+      cursor: pointer;
+      overflow: hidden;
+      width: 100%;
+      display: inline-block;
+
+      @include sp {
+        min-width: 37.5rem;
+        max-width: unset;
+      }
+      img {
+        height: auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background: url("/assets/img/pht_qa02.jpg");
+          transform: scale(1.2);
+          opacity: 0.5;
+
+          @include sp {
+            background: url("/assets/img/footer-hover.sp02.jpg");
+          }
+        }
+      }
+    }
     .footer__text {
       position: absolute;
       font-size: 3.2rem;

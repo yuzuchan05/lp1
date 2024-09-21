@@ -89,6 +89,10 @@
         <p class="title-begin">現役高校生・高卒生</p>
         <p class="title-main">入学説明会の<br>お申し込み開始</p>
       </div>
+    </section>
+
+<!------------- btn ----------------->
+    <section class="three-btn">
       <div class="btn__content">
         <ul class="btn-form flex">
           <li><a href="#" class="btn btn-form01">入学のお問い合わせ</a></li>
@@ -106,7 +110,9 @@
           <h3 class="reason__title">選ばれる<span class="large">3</span>つの理由</h3>
         </div>
         <div class="reason__content">
-          <img class="reason-pic" src="assets/img/pht_reason01.jpg" alt="">
+          <div class="reason__img">
+            <img class="reason-pic" src="assets/img/pht_reason01.jpg" alt="">
+          </div>
           <div class="reason__body">
             <div class="reason__body--point">Point<span class="large"> 1</span></div>
             <div class="reason__catch">実績のある講師陣だから安心</div>
@@ -114,7 +120,9 @@
           </div>
         </div>
         <div class="reason__content reason__content--reverse">
-          <img class="reason-pic" src="assets/img/pht_reason02.png" alt="">
+          <div class="reason__img reason__img02">
+            <img class="reason-pic reason-pic02" src="assets/img/pht_reason02.png" alt="">
+          </div>
           <div class="reason__body reason__body-second">
             <div class="reason__body--point">Point<span class="large"> 2</span></div>
             <div class="reason__catch">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
@@ -122,7 +130,9 @@
           </div>
         </div>
         <div class="reason__content">
-          <img class="reason-pic" src="assets/img/pht_reason03.png" alt="">
+          <div class="reason__img reason__img03">
+            <img class="reason-pic reason-pic03" src="assets/img/pht_reason03.png" alt="">
+          </div>
           <div class="reason__body">
             <div class="reason__body--point">Point<span class="large"> 3</span></div>
             <div class="reason__catch">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
@@ -157,38 +167,38 @@
             <!--- タブ1 --->
             <div class="tab-pane flex" id="tab-1" role="tabpanel">
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource01.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource01.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>高卒生</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource02.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource02.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>高校3年生</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource03.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource03.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>高校2年生</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource04.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource04.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>高校1年生</h3>
               </div>
             </div>
             <!--- タブ2 --->
             <div class="tab-pane flex" id="tab-2" role="tabpanel">
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource05.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource05.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>難関大学・医学部合格を目指す</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource06.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource06.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>名門私立大学合格を目指す</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource07.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource07.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>国公立大学合格を目指す</h3>
               </div>
               <div class="tab__content--item">
-                <button href="#"><img src="assets/img/pht_cource08.png" alt=""></button>
+                <a href="#" class="tab--item__img"><img src="assets/img/pht_cource08.png" alt=""></a>
                 <h3 class="tab__content--title"><i class="bi bi-arrow-right"></i>海外の大学合格を目指す</h3>
               </div>
             </div>
@@ -253,7 +263,7 @@
 
 <!------------- contact ----------------->
 
-    <section class="contact">
+    <section class="contact contact03">
       <div class="contents__width">
         <div class="container contact__catch">入学ご検討の方は、まずは入学説明会に<br class="no-pc">お越しください</div>
         <a class="btn nav__btn contact__btn" href="#">入学説明会に申し込む</a>
@@ -268,12 +278,13 @@
       <div class="footer__container">
         <div class="footer__top">
           <div class="footer__left">
-            <button class="btn__img--left" href="#"><img class="img__left no-sp" src="assets/img/pht_qa.jpg" alt=""></button>
-            <button class="btn__img--right" href="#"><img class="img__left no-pc" src="assets/img/footer-sp01.jpg" alt=""></button>
+            <a class="btn__img--left" href="#"><img class="img__left no-sp" src="assets/img/pht_qa.jpg" alt=""></a>
+            <a class="btn__img--left" href="#"><img class="img__left no-pc" src="assets/img/footer-sp01.jpg" alt=""></a>
+            <div class="footer__text">よくあるご質問</div>
           </div>
           <div class="footer__right">
-            <button class="btn__img--right" href="#"><img class="img__right no-sp" src="assets/img/pht_classrooms.jpg" alt=""></button>
-            <button class="btn__img--right" href="#"><img class="img__left no-pc" src="assets/img/footer-sp02.jpg" alt=""></button>
+            <a class="btn__img--right" href="#"><img class="img__right no-sp" src="assets/img/pht_classrooms.jpg" alt=""></a>
+            <a class="btn__img--right" href="#"><img class="img__left no-pc" src="assets/img/footer-sp02.jpg" alt=""></a>
             <div class="footer__text">お近くの教室を探す</div>
           </div>
         </div>
