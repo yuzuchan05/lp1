@@ -22,9 +22,12 @@ $pc:767.9px;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;  /* スムーススクロールでリンクへ飛ぶ */
+    scroll-padding-top: 10rem;  /* スムーススクロールでheader高さ分などの位置調整 */
 
     @include sp {
         font-size: calc(10 / 375 * 100vw);
+        scroll-padding-top: 7rem;
     }
 }
 @media screen and (max-width:1200px) and (min-width:768px) {
@@ -366,7 +369,7 @@ button:hover {
 -----------------------------------------*/
 .top {
   position: relative;
-  background: url("/assets/img/mainVIsual_pc.jpg") no-repeat;
+  background: url("/assets/image/mainVIsual_pc.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   top: 10.2rem;
@@ -374,7 +377,7 @@ button:hover {
   width: 100%;
 
   @include sp {
-    background: url("/assets/img/mainVIsual_sp.jpg") no-repeat;
+    background: url("/assets/image/mainVIsual_sp.jpg") no-repeat;
     margin: 7rem auto 0;
     top: 0;
     background-size: cover;
@@ -888,6 +891,7 @@ button:hover {
     overflow: hidden;
     width: 100%;
     display: inline-block;
+    border-radius: 1.5rem;
 
     @include sp {
       max-width: 34.3rem;
@@ -1077,7 +1081,7 @@ button:hover {
 .footer {
     background-color: #DDDDDD;
 
-  .no-pc {
+  .img__left--sp{
     display: none;
 
     @include sp {
@@ -1085,8 +1089,8 @@ button:hover {
       width: 100%;
     }
   }
-  .no-sp {
-    display: unset;
+  .img__left--pc {
+    display: inline-block;
 
     @include sp {
       display: none;
@@ -1110,35 +1114,50 @@ button:hover {
     display: inline-block;
 
     @include sp {
-      height: auto;
-      vertical-align: top;
       width: 100%;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-    }
-
-    a {
+      position: relative;
       cursor: pointer;
       overflow: hidden;
+    }
+    picture {
+      position: relative;
+      cursor: pointer;
       width: 100%;
+      overflow: hidden;
       display: inline-block;
 
       @include sp {
-        min-width: 37.5rem;
-        max-width: unset;
-      }
-      img {
         height: auto;
-        transition: transform 0.3s ease;
+        vertical-align: top;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
 
-        &:hover {
-          background: url("/assets/img/pht_qa01.jpg");
-          transform: scale(1.2);
-          opacity: 0.5;
+      a {
+        cursor: pointer;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block;
 
-          @include sp {
-            background: url("/assets/img/footer-hover.sp01.jpg");
+        @include sp {
+          min-width: 37.5rem;
+          max-width: unset;
+        }
+        .img__left--pc,
+        .img__left--sp {
+          height: auto;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            background: url("/assets/image/pht_qa01.jpg");
+            transform: scale(1.2);
+            opacity: 0.5;
+
+            @include sp {
+              background: url("/assets/image/footer-hover.sp01.jpg");
+            }
           }
         }
       }
@@ -1152,7 +1171,10 @@ button:hover {
       transform: translateY(-47%);
 
       @include sp {
-        display: none;
+        font-size: 2.2rem;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
       }
     }
   }
@@ -1161,38 +1183,58 @@ button:hover {
     cursor: pointer;
     width: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    display: inline-block;
 
     @include sp {
       width: 100%;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    picture {
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      overflow: hidden;
       display: flex;
       justify-content: end;
       align-items: center;
-    }
-
-    a {
-      cursor: pointer;
-      overflow: hidden;
-      width: 100%;
-      display: inline-block;
 
       @include sp {
-        min-width: 37.5rem;
-        max-width: unset;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
       }
-      img {
-        height: auto;
-        transition: transform 0.3s ease;
 
-        &:hover {
-          background: url("/assets/img/pht_qa02.jpg");
-          transform: scale(1.2);
-          opacity: 0.5;
+      a {
+        cursor: pointer;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block;
 
-          @include sp {
-            background: url("/assets/img/footer-hover.sp02.jpg");
+        @include sp {
+          min-width: 37.5rem;
+          max-width: unset;
+          width: 100%;
+        }
+        .img__left--pc {
+          width: 100%;
+        }
+        .img__right--pc,
+        .img__right--sp  {
+          height: auto;
+          transition: transform 0.3s ease;
+          width: 100%;
+
+          &:hover {
+            background: url("/assets/image/footer01.jpg");
+            transform: scale(1.2);
+            opacity: 0.5;
+
+            @include sp {
+              background: url("/assets/image/footer02.jpg");
+            }
           }
         }
       }
@@ -1206,7 +1248,10 @@ button:hover {
       transform: translateY(-48%);
 
       @include sp {
-        display: none;
+        font-size: 2.2rem;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
       }
     }
   }
