@@ -372,7 +372,7 @@ button:hover {
 -----------------------------------------*/
 .top {
   position: relative;
-  background: url("/assets/image/mainVIsual_pc.jpg") no-repeat;
+  background: url("/assets/image/main_pc.png") no-repeat;
   background-size: cover;
   background-position: center;
   top: 10.2rem;
@@ -381,7 +381,7 @@ button:hover {
 }
 @media screen and (max-width: 767.9px) {
   .top {
-    background: url("/assets/image/mainVIsual_sp.jpg") no-repeat;
+    background: url("/assets/image/main_sp.png") no-repeat;
     margin: 7rem auto 0;
     top: 0;
     background-size: cover;
@@ -1237,13 +1237,13 @@ button:hover {
   width: 100%;
 }
 .footer__left source, .footer__left-image:hover {
-  background: url("/assets/image/pht_qa01.jpg");
+  background: url("/assets/image/classrooms.jpg");
   transform: scale(1.2);
   opacity: 0.5;
 }
 @media screen and (max-width: 767.9px) {
   .footer__left source, .footer__left-image:hover {
-    background: url("/assets/image/footer01.jpg");
+    background: url("/assets/image/footer_hover_01.jpg");
   }
 }
 .footer__left .footer__text {
@@ -1296,13 +1296,13 @@ button:hover {
   width: 100%;
 }
 .footer__right source, .footer__right-image:hover {
-  background: url("/assets/image/pht_classrooms01.jpg");
+  background: url("/assets/image/classrooms_01.jpg");
   transform: scale(1.2);
   opacity: 0.5;
 }
 @media screen and (max-width: 767.9px) {
   .footer__right source, .footer__right-image:hover {
-    background: url("/assets/image/footer02.jpg");
+    background: url("/assets/image/footer_hover_02.jpg");
   }
 }
 .footer__right .footer__text {
