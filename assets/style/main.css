@@ -3,9 +3,8 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;  /* スムーススクロールでリンクへ飛ぶ */
   scroll-padding-top: 10rem;  /* スムーススクロールでheader高さ分などの位置調整 */
-
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   html {
     font-size: 2.6666666667vw;
     scroll-padding-top: 7rem;
@@ -56,7 +55,7 @@ li {
   padding: 0 1.6rem;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contents__width {
     padding: 0;
   }
@@ -66,7 +65,7 @@ li {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .flex {
     display: inherit;
   }
@@ -79,7 +78,7 @@ li {
 .no-pc {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .no-pc {
     display: inherit;
   }
@@ -107,7 +106,7 @@ li {
   display: flex;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contact__btn {
     width: 30.5rem;
     padding: 2rem 4.1rem;
@@ -138,7 +137,7 @@ button:hover {
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1607843137);
   opacity: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header {
     height: 7rem;
     overflow: visible;
@@ -149,7 +148,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header .contents__width {
     justify-content: space-between;
   }
@@ -158,6 +157,8 @@ button:hover {
   align-items: center;
   display: flex;
   height: 7rem;
+  width: 26rem;
+  padding-right: 2.5rem;
 }
 @media screen and (max-width: 1200px) and (min-width: 767.9px) {
   .header .logo {
@@ -165,13 +166,12 @@ button:hover {
     max-width: 20rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header .logo {
-    max-width: 16.6rem;
-    margin: 0 1.6rem;
+    margin: 0 1.4rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header .logo a {
     align-items: center;
     display: flex;
@@ -180,7 +180,7 @@ button:hover {
 .header img {
   max-width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header img {
     max-width: 100%;
     width: 16.6rem;
@@ -190,8 +190,8 @@ button:hover {
 /* ----- header-pc-nav ------ */
 .pc-nav {
   height: 10.1rem;
-  gap: 4.8rem;
-  margin-left: 8.3%;
+  gap: 4.7rem;
+  margin-left: 7.3%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -200,7 +200,7 @@ button:hover {
     margin-left: 5%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .pc-nav {
     display: none;
   }
@@ -216,7 +216,7 @@ button:hover {
     gap: 2.8rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .pc-nav ul {
     display: none;
   }
@@ -249,7 +249,7 @@ button:hover {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .pc-nav .nav__btn {
     display: none;
   }
@@ -259,7 +259,7 @@ button:hover {
 .hamburger__nav {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__nav {
     display: none;
     background: #005BAC;
@@ -274,7 +274,7 @@ button:hover {
 .hamburger__icon {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__icon {
     background-color: #005BAC;
     width: 7rem;
@@ -292,7 +292,7 @@ button:hover {
 }
 
 /* ----- hamburger-menu ------ */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__nav {
     background: #005BAC;
     position: absolute;
@@ -309,7 +309,7 @@ button:hover {
   align-items: center;
   justify-content: flex-end;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__nav ul {
     display: block;
     height: auto;
@@ -317,13 +317,13 @@ button:hover {
     padding: 0 2rem 3.2rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__nav li {
     border-bottom: 1px solid #fff;
     padding: 2rem 0 2rem 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger__nav a {
     font-size: 1.8rem;
     line-height: 1.4444444444;
@@ -355,7 +355,7 @@ button:hover {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .hamburger_icon {
     padding-right: 1.8rem;
     height: 6rem;
@@ -379,7 +379,7 @@ button:hover {
   height: 65.1rem;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .top {
     background: url("/assets/image/mainVIsual_sp.jpg") no-repeat;
     margin: 7rem auto 0;
@@ -396,10 +396,10 @@ button:hover {
   margin: 0 auto;
   max-width: 116rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .top__item-container {
-    padding: 3rem 0 0rem 2rem;
-    max-width: 16.7rem;
+    padding: 3rem 0 0rem 1.7rem;
+    max-width: 16.4rem;
     margin: 0;
   }
 }
@@ -407,7 +407,7 @@ button:hover {
   height: 7rem;
   width: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .top__item {
     height: 6.8rem;
   }
@@ -420,7 +420,7 @@ button:hover {
     height: 15rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .item__img {
     height: 7.4rem;
   }
@@ -435,18 +435,18 @@ button:hover {
   max-width: 24rem;
   padding: 0 1.8rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .item__award {
     margin-top: 0.5rem;
     padding: 0 2rem 0 2rem;
-    max-width: 9rem;
+    max-width: 9.8rem;
   }
 }
 .item__award p {
   font-size: 2rem;
   line-height: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .item__award p {
     font-size: 1.1rem;
     line-height: 1.4545454545;
@@ -466,7 +466,7 @@ button:hover {
   line-height: 0.9;
   padding: 1.3rem 0 0 1.3rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .item__award .award {
     font-size: 2.5rem;
     padding: 0.3rem 0.3rem 0 0;
@@ -475,7 +475,7 @@ button:hover {
 .item__award .large {
   font-size: 7.4rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .item__award .large {
     font-size: 3.8rem;
   }
@@ -485,7 +485,7 @@ button:hover {
   max-width: 116rem;
   padding: 0 0 0 3rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .top__title {
     margin: 4rem 0;
     max-width: 116rem;
@@ -500,7 +500,7 @@ button:hover {
   font-size: 3.3rem;
   line-height: 1.0909090909;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .title-begin {
     font-size: 1.4rem;
     line-height: 1.44;
@@ -514,7 +514,7 @@ button:hover {
   color: #005bac;
   max-width: 49rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .title-main {
     font-size: 2.5rem;
     line-height: 1.44;
@@ -530,7 +530,7 @@ button:hover {
   z-index: 10;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .three-btn {
     margin: 2.4rem 0 0;
   }
@@ -538,7 +538,7 @@ button:hover {
 .three-btn .btn__content {
   padding: 0 2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .three-btn .btn__content {
     font-size: 2rem;
     padding-top: 0;
@@ -554,7 +554,7 @@ button:hover {
     gap: 2.5rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .three-btn .btn-form {
     font-size: 2rem;
     padding-top: 0;
@@ -576,7 +576,7 @@ button:hover {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .three-btn li a {
     font-size: 1.6rem;
     padding: 1.2rem 0;
@@ -597,9 +597,9 @@ button:hover {
 /* reason
 -----------------------------------------*/
 .reason {
-  padding: 7.8rem 0 2.6rem;
+  padding: 7.8rem 0 2.9rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason {
     padding: 1.7rem 0 0;
   }
@@ -614,29 +614,29 @@ button:hover {
     padding: 0 2rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason .contents__width {
     max-width: 120rem;
     padding: 0 1.6rem;
   }
 }
-.reason .reason__container {
+.reason__container {
   text-align: center;
-  font-size: 3.1rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1;
 }
-@media screen and (max-width: 767px) {
-  .reason .reason__container {
-    font-size: 2.4rem;
+@media screen and (max-width: 767.9px) {
+  .reason__container {
+    font-size: 1.87rem;
   }
 }
 .reason .reason__title {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason .reason__title {
-    margin-bottom: 2.1rem;
+    margin-bottom: 1.1rem;
   }
 }
 .reason .large {
@@ -645,17 +645,23 @@ button:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason .large {
     font-size: 4rem;
   }
 }
+.reason__body--large {
+  font-size: 4.2rem;
+  color: #f11f8d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
 .reason .reason__content {
   display: flex;
-  margin: 0 0 4.8rem 0;
+  margin: 0 0 4rem 0;
   gap: 4rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason .reason__content {
     flex-direction: column;
     gap: 0;
@@ -667,7 +673,7 @@ button:hover {
   display: flex;
   flex-direction: row-reverse;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__content--reverse {
     overflow: hidden;
     flex-direction: column;
@@ -680,11 +686,25 @@ button:hover {
   display: inline-block;
   border-radius: 1.5rem;
   overflow: hidden;
+  padding-top: 1rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__img {
     width: 100%;
     max-width: unset;
+    height: 23rem;
+  }
+}
+.reason__img02 {
+  padding-top: 0.7rem;
+}
+@media screen and (max-width: 767.9px) {
+  .reason__img02 {
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .reason__img03 {
     height: 22rem;
   }
 }
@@ -692,7 +712,7 @@ button:hover {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason-pic {
     max-width: unset;
     width: 100%;
@@ -705,14 +725,14 @@ button:hover {
     transform: scale(1.07);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason-pic02 {
     -o-object-position: left -0.1rem top -0.2rem;
        object-position: left -0.1rem top -0.2rem;
     transform: scale(1.08);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason-pic03 {
     -o-object-position: left -0.1rem top -0.2rem;
        object-position: left -0.1rem top -0.2rem;
@@ -722,20 +742,20 @@ button:hover {
 .reason__body {
   width: 51%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__body {
     width: 100%;
   }
 }
 .reason__body--point {
   font-size: 2.8rem;
+  padding-top: 1.4rem;
   color: #f11f8d;
   font-weight: 700;
   font-style: italic;
   font-family: "Poppins", sans-serif;
-  padding-top: 0.5rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__body--point {
     font-size: 2.2rem;
     padding-top: 1.2rem;
@@ -746,7 +766,7 @@ button:hover {
   font-size: 4.2rem;
   font-weight: 700;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__body--point span {
     font-size: 3.6rem;
   }
@@ -754,21 +774,21 @@ button:hover {
 .reason__catch {
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1.5;
-  padding: 0.65rem 0 1.8rem 0;
+  line-height: 1.66;
+  padding: 0.2rem 0 1.5rem 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__catch {
     font-size: 2rem;
     padding: 0.3rem 0 0.8rem 0;
-    line-height: 1.53;
+    line-height: 1.5;
   }
 }
 .reason__text {
   font-size: 1.6rem;
   line-height: 1.75;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .reason__text {
     padding-bottom: 3.4rem;
   }
@@ -780,29 +800,32 @@ button:hover {
   background-color: #FFEDED;
   padding: 4.9rem 0 5.6rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contact {
-    padding: 3.7rem 0;
+    padding: 3.9rem 0 4.2rem;
   }
 }
 .contact02 {
-  padding: 4.5rem 0 5.6rem;
+  padding: 4.3rem 0 5.6rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contact02 {
     padding: 4.2rem 0 4.5rem;
   }
 }
-@media screen and (max-width: 767px) {
+.contact03 {
+  padding: 4.7rem 0 5.6rem;
+}
+@media screen and (max-width: 767.9px) {
   .contact03 {
-    padding: 3.7rem 0 4.5rem;
+    padding: 3.9rem 0 4.4rem;
   }
 }
 .contact .contents__width {
   max-width: 120rem;
   padding: 0 2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contact .contents__width {
     padding: 0 1.6rem;
   }
@@ -810,10 +833,10 @@ button:hover {
 .contact__catch {
   font-size: 1.6rem;
   line-height: 2.625;
-  padding: 0 0 1rem;
+  padding: 0 0 1.35rem;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .contact__catch {
     font-size: 1.6rem;
     line-height: 1.75;
@@ -825,21 +848,17 @@ button:hover {
 -------------------------------------------- */
 .course {
   padding: 8.2rem 0 0;
-  /* tabs */
-  /* tabs navigation */
-  /* アクティブ状態 */
-  /* tabs contents */
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course {
-    padding: 7.4rem 0 6.2rem;
+    padding: 7.1rem 0 6.2rem;
   }
 }
 .course .contents__width {
   max-width: 120rem;
   padding: 0 2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .contents__width {
     max-width: 120rem;
     padding: 0;
@@ -854,13 +873,13 @@ button:hover {
   line-height: 1;
   padding: 0 0 4.2rem 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course__title {
     font-size: 2.8rem;
-    padding: 0 0 2.9rem 1.1rem;
+    padding: 0 0 2.8rem 1.3rem;
   }
 }
-.course .st-theme-basic {
+.st-theme-basic {
   border: none;
   position: relative;
 }
@@ -869,7 +888,7 @@ button:hover {
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .tab.st > .nav {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
@@ -880,14 +899,15 @@ button:hover {
   box-shadow: none;
 }
 .course .tab.st-theme-basic > .nav .nav-link {
-  padding: 2rem 0;
+  padding: 1.8rem 0 2rem;
   font-size: 2.4rem;
+  font-weight: 700;
   line-height: 1.5;
   background-color: #f0f0f0;
   color: #333;
   border-radius: 12px 12px 0 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .tab.st-theme-basic > .nav .nav-link {
     padding: 1.3rem 0;
     font-size: 1.8rem;
@@ -901,7 +921,7 @@ button:hover {
 .course .tab.st-theme-basic > .nav .nav-link.active::after {
   background-color: unset !important;
 }
-.course .tab.st-theme-basic > .tab-content > .tab-pane {
+.tab.st-theme-basic > .tab-content > .tab-pane {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -912,42 +932,47 @@ button:hover {
   padding: 3.2rem;
   border-radius: 0 0 1.2rem 1.2rem;
 }
-@media screen and (max-width: 767px) {
-  .course .tab.st-theme-basic > .tab-content > .tab-pane {
-    padding: 2.8rem 1.6rem;
+@media screen and (max-width: 767.9px) {
+  .tab.st-theme-basic > .tab-content > .tab-pane {
+    padding: 2.9rem 1.6rem 5rem;
     flex-direction: column;
-    gap: 0;
+    gap: 2.3rem;
   }
 }
 .course .st > .tab-content {
   position: relative;
   overflow: hidden;
-  height: 92.7rem !important;
+  min-height: 92.7rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .st > .tab-content {
     min-height: 121.2rem;
   }
 }
-.course .tab__content-item {
-  width: 48.3%;
+.tab__content-item {
+  width: 48.5%;
 }
-@media screen and (max-width: 767px) {
-  .course .tab__content-item {
+@media screen and (max-width: 767.9px) {
+  .tab__content-item {
     width: 100%;
   }
 }
-.course .tab-item__img {
+.tab__content-item img {
+  border-radius: 0.6rem;
+}
+.tab-item__img {
   cursor: pointer;
   max-width: 53.2rem;
   overflow: hidden;
   width: 100%;
   display: inline-block;
   border-radius: 1.5rem;
+  margin-bottom: 1.15rem;
 }
-@media screen and (max-width: 767px) {
-  .course .tab-item__img {
+@media screen and (max-width: 767.9px) {
+  .tab-item__img {
     max-width: 34.3rem;
+    margin-bottom: 0.8rem;
   }
 }
 .course .tab-item__img img {
@@ -963,30 +988,35 @@ button:hover {
   padding: 1.1rem 0 0 0;
   font-size: 2rem;
   font-weight: 700;
+  position: relative;
+  top: -0.2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .tab__content-title {
     padding: 0.8rem 0 2.2rem;
+    top: -0.2rem;
   }
 }
 .course .tab__content-title i {
   color: #005BAC;
   font-size: 21px;
   font-weight: 700;
-  margin-right: 0.7rem;
+  margin: 0 0.7rem 0 0;
   text-shadow: 0.05rem 0.05rem 0 #005BAC, -0.05rem -0.05rem 0 #005BAC, 0.05rem -0.05rem 0 #005BAC, -0.05rem 0.05rem 0 #005BAC;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .tab__content-title i {
     font-size: 1.6rem;
     font-weight: 700;
     margin-right: 0.7rem;
+    position: relative;
+    top: -0.2rem;
   }
 }
 .course .tab__content-item img {
   border-radius: 0.6rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .course .tab__content-item img {
     border-radius: 0.3rem;
     min-height: 22rem;
@@ -996,18 +1026,18 @@ button:hover {
 /* cost
 -------------------------------------------- */
 .cost {
-  padding: 8.2rem 0 7rem;
+  padding: 8.4rem 0 7rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost {
-    padding: 7rem 0 6.2rem;
+    padding: 6.8rem 0 6.2rem;
   }
 }
 .cost .contents__width {
   max-width: 64rem;
   padding: 0 2rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost .contents__width {
     max-width: 60rem;
     padding: 0 1.6rem;
@@ -1016,7 +1046,7 @@ button:hover {
 .cost__container {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost__container {
     padding: 0;
     margin: auto;
@@ -1026,12 +1056,12 @@ button:hover {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1;
-  padding: 0 0 4.2rem 0;
+  padding: 0 0 3.8rem 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost__title {
     font-size: 2.8rem;
-    padding: 0 0 2.3rem 1.5rem;
+    padding: 0 0 2.6rem 1.6rem;
   }
 }
 .cost table {
@@ -1039,7 +1069,7 @@ button:hover {
   width: 100%;
   border: 0.3rem solid #ccc;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost table {
     min-height: 34.3rem;
     margin-bottom: 0;
@@ -1048,29 +1078,14 @@ button:hover {
 .cost th, .cost td {
   border: 0.1rem solid #ccc;
   text-align: center;
-  padding: 0.6rem 0.2rem 0.6rem 0.5rem;
-}
-@media screen and (max-width: 767px) {
-  .cost th, .cost td {
-    padding: 0;
-  }
 }
 .cost th {
   background-color: #f5f5f5;
   font-size: 1.6rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost th {
     font-size: 1.6rem;
-  }
-}
-.cost td {
-  padding: 0.22rem;
-  padding-bottom: 0.1rem;
-}
-@media screen and (max-width: 767px) {
-  .cost td {
-    padding: 0;
   }
 }
 .cost--time {
@@ -1078,27 +1093,32 @@ button:hover {
   font-size: 1.8rem;
   line-height: 2;
   width: 14.1rem;
+  padding: 2rem 0.1rem 2.2rem 0.4rem;
+  letter-spacing: 0.16rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost--time {
     padding: 1.4rem 0;
     font-size: 1.6rem;
     line-height: 2;
-    width: 11.4rem;
+    width: 11.6rem;
     line-height: 2.25;
     border-right: none;
+    letter-spacing: 0.03rem;
   }
 }
 .table__cost {
   padding-right: 0.4rem;
   letter-spacing: 0.15rem;
+  padding: 2rem 0.4rem 2.2rem 0.5rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .table__cost {
     padding-left: 0;
     border-left: none;
     padding-right: 0.8rem;
     letter-spacing: 0.02rem;
+    padding: 2rem 1.7rem 2.2rem 0.5rem;
   }
 }
 .table__body--time {
@@ -1106,10 +1126,34 @@ button:hover {
   line-height: 2;
   padding: 2rem 2.6rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .table__body--time {
-    font-size: 1.4rem;
-    padding: 1.3rem 0 1rem;
+    font-size: 1.6rem;
+    padding: 1rem 0 1rem;
+  }
+}
+.table__body--time02 {
+  padding: 2rem 2.6rem 2rem 3rem;
+}
+@media screen and (max-width: 767.9px) {
+  .table__body--time02 {
+    padding: 1.1rem 0rem 1rem 0rem;
+  }
+}
+.table__body--cost02 {
+  padding: 2.6rem 2.6rem 2rem 3rem;
+}
+.tabl__body--cost06 {
+  font-family: Poppins;
+  color: #F23397;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.125;
+  padding: 1.5rem 0 0.5rem;
+}
+@media screen and (max-width: 767.9px) {
+  .tabl__body--cost06 {
+    padding: 1.5rem 0 0.4rem;
   }
 }
 .tabl__body--cost {
@@ -1118,14 +1162,14 @@ button:hover {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.125;
-  padding: 1.8rem 0;
+  padding: 1.9rem 0 1.7rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .tabl__body--cost {
     font-size: 2.8rem;
     line-height: 1.2857142857;
     top: -0.6rem;
-    padding: 1.17rem 0.5rem 1.1rem 0;
+    padding: 1.3rem 0.5rem 1rem 0;
   }
 }
 .cost .small {
@@ -1133,7 +1177,7 @@ button:hover {
   line-height: 2;
   font-weight: 500;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .cost .small {
     font-size: 1.6rem;
     line-height: 2.25;
@@ -1145,30 +1189,19 @@ button:hover {
 .footer {
   background-color: #DDDDDD;
 }
-.footer .img__left--sp {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .footer .img__left--sp {
+@media screen and (max-width: 767.9px) {
+  .footer__left-image {
     display: unset;
     width: 100%;
   }
 }
-.footer .img__left--pc {
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
-  .footer .img__left--pc {
-    display: none;
-  }
-}
 .footer__top {
   display: flex;
-  padding-bottom: 3rem;
+  padding-bottom: 4.8rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__top {
-    padding-bottom: 4.6rem;
+    padding-bottom: 2.8rem;
     height: 100%;
     flex-direction: column;
   }
@@ -1179,7 +1212,7 @@ button:hover {
   cursor: pointer;
   overflow: hidden;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__left {
     width:100%;
     position: relative;
@@ -1187,63 +1220,46 @@ button:hover {
     overflow: hidden;
   }
 }
-.footer__left picture {
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__left picture {
     height: auto;
-    vertical-align: top;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
   }
 }
-.footer__left a {
-  cursor: pointer;
-  overflow: hidden;
-  width: 100%;
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__left a {
     min-width: 37.5rem;
     max-width: unset;
   }
 }
-.footer .footer__left a .img__left--pc, .img__left--sp {
+.footer__left source, .footer__left-image {
   height: auto;
   transition: transform 0.3s ease;
+  width: 100%;
 }
-.footer .footer__left a .img__left--pc, .img__left--sp:hover {
+.footer__left source, .footer__left-image:hover {
   background: url("/assets/image/pht_qa01.jpg");
   transform: scale(1.2);
   opacity: 0.5;
 }
-@media screen and (max-width: 767px) {
-  .footer .footer__left a .img__left--pc, .img__left--sp:hover {
-    background: url("/assets/image/footer-hover.sp01.jpg");
+@media screen and (max-width: 767.9px) {
+  .footer__left source, .footer__left-image:hover {
+    background: url("/assets/image/footer01.jpg");
   }
 }
 .footer__left .footer__text {
   position: absolute;
   font-size: 3.2rem;
   color: #fff;
-  top: 47%;
-  left: 38%;
-  transform: translateY(-47%);
+  top: 51%;
+  left: 38.4%;
+  transform: translateY(-51%);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__left .footer__text {
     font-size: 2.2rem;
-    top: 46%;
-    left: 5%;
-    transform: translateY(-46%);
+    top: 48%;
+    left: 4%;
+    transform: translateY(-48%);
   }
 }
 .footer__right {
@@ -1252,7 +1268,7 @@ button:hover {
   cursor: pointer;
   overflow: hidden;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__right {
     width: 100%;
     position: relative;
@@ -1260,65 +1276,49 @@ button:hover {
     overflow: hidden;
   }
 }
-.footer__right picture {
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__right picture {
     width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
   }
 }
-.footer__right a {
-  cursor: pointer;
-  overflow: hidden;
-  width: 100%;
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__right a {
     min-width: 37.5rem;
     max-width: unset;
   }
 }
-.footer .footer__left .img__left--pc {
+.footer__left source {
   width: 100%;
 }
-.footer .footer__right a .img__right--pc, .img__right--sp {
+.footer__right source, .footer__right-image {
   height: auto;
   transition: transform 0.3s ease;
   width: 100%;
 }
-.footer .footer__right a .img__right--pc, .img__right--sp:hover {
-  background: url("/assets/image/pht_qa02.jpg");
+.footer__right source, .footer__right-image:hover {
+  background: url("/assets/image/pht_classrooms01.jpg");
   transform: scale(1.2);
   opacity: 0.5;
 }
-@media screen and (max-width: 767px) {
-  .footer .footer__right a .img__right--pc, .img__right--sp:hover {
-    background: url("/assets/image/footer-hover.sp02.jpg");
+@media screen and (max-width: 767.9px) {
+  .footer__right source, .footer__right-image:hover {
+    background: url("/assets/image/footer02.jpg");
   }
 }
 .footer__right .footer__text {
   position: absolute;
   font-size: 3.2rem;
   color: #fff;
-  top: 48%;
-  left: 35%;
-  transform: translateY(-48%);
+  top: 51%;
+  left: 35.1%;
+  transform: translateY(-51%);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__right .footer__text {
     font-size: 2.2rem;
-    top: 46%;
-    left: 5%;
-    transform: translateY(-46%);
+    top: 48%;
+    left: 4%;
+    transform: translateY(-48%);
   }
 }
 .footer__bottom {
@@ -1326,7 +1326,7 @@ button:hover {
   padding: 0 0 5.1rem 0;
   background-color: #DDDDDD;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .footer__bottom {
     padding: 0 0 3.2rem 0;
   }
@@ -1338,11 +1338,11 @@ button:hover {
   background-color: #DDDDDD;
   letter-spacing: 0.05rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .copyright {
-    padding: 3.2rem 0;
+    padding: 3rem 0rem 3rem 1.6rem;
     font-size: 1.3rem;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.03rem;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/* sourceMappingURL=main.css.map */
