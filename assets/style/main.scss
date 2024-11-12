@@ -40,7 +40,7 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
-    color: #333;
+    color: #000;
 }
 * {
     line-height: 1.2;
@@ -52,7 +52,7 @@ img {
 }
 a {
     text-decoration: none;
-    color: #333;
+    color: #000;
 }
 
 
@@ -125,7 +125,7 @@ li {
   font-weight: 700;
   color: #fff;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 
   @include sp {
     width: 30.5rem;
@@ -133,6 +133,7 @@ li {
     font-size: 2rem;
   }
 }
+
 button {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -738,14 +739,14 @@ button:hover {
 -------------------------------------------- */
 .contact {
   background-color: #FFEDED;
-  padding: 4.9rem 0 5.6rem;
+  padding: 4.9rem 0 2.6rem;
 
   @include sp {
     padding: 3.7rem 0;
   }
 
   &02 {
-    padding: 4.5rem 0 5.6rem;
+    padding: 4.5rem 0 2.6rem;
 
     @include sp {
       padding: 4.2rem 0 4.5rem;
@@ -753,7 +754,7 @@ button:hover {
   }
   &03 {
     @include sp {
-      padding: 3.7rem 0 4.5rem;
+      padding: 3.7rem 0 2.5rem;
     }
   }
   .contents__width {
@@ -775,6 +776,14 @@ button:hover {
       line-height: calc(28 / 16);
       padding: 0 0 1.2rem;
     }
+  }
+  &__item {
+      display: flex;
+      flex-direction: row;
+
+      @include sp {
+          display: block;
+      }
   }
 }
 

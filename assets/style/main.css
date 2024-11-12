@@ -104,7 +104,7 @@ li {
   font-weight: 700;
   color: #fff;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 @media screen and (max-width: 767.9px) {
   .contact__btn {
@@ -802,7 +802,7 @@ button:hover {
 }
 @media screen and (max-width: 767.9px) {
   .contact {
-    padding: 3.9rem 0 4.2rem;
+    padding: 3.9rem 0 2.2rem;
   }
 }
 .contact02 {
@@ -810,7 +810,7 @@ button:hover {
 }
 @media screen and (max-width: 767.9px) {
   .contact02 {
-    padding: 4.2rem 0 4.5rem;
+    padding: 4.2rem 0 2.5rem;
   }
 }
 .contact03 {
@@ -818,7 +818,7 @@ button:hover {
 }
 @media screen and (max-width: 767.9px) {
   .contact03 {
-    padding: 3.9rem 0 4.4rem;
+    padding: 3.9rem 0 2.4rem;
   }
 }
 .contact .contents__width {
@@ -843,6 +843,18 @@ button:hover {
     padding: 0 0 1.2rem;
   }
 }
+.contact__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+@media screen and (max-width: 767.9px) {
+    .contact__item {
+        display: block;
+    }
+}
+
 
 /* course
 -------------------------------------------- */
